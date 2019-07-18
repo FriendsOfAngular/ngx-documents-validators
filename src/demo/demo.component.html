@@ -1,0 +1,9 @@
+<section>
+  <form action="" [formGroup]="form">
+    <div>
+      <label for="">Número Certidão:</label>
+      <input type="text" formControlName="certificateNumber" certificateNumber>
+      <div *ngIf="form.get('certificateNumber').hasError('number') && form.get('certificateNumber').touched" class="error">{{form.get('certificateNumber').getError('number')}}</div>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,14 @@
+{
+  "name": "ngx-documents-validators",
+  "version": "0.1.0",
+  "description": "This is a Angular Library for validate documents",
+  "keywords": [
+    "Angular",
+    "Library"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "peerDependencies": {
+    "@angular/common": "^8.1.2",
+    "@angular/core": "^8.1.2"
+  }
+}
