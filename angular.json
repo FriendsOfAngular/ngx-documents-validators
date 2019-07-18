@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "ngx-documents-validators-lib": {
+      "projectType": "library",
+      "root": "projects/ngx-documents-validators-lib",
+      "sourceRoot": "projects/ngx-documents-validators-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-documents-validators-lib/tsconfig.lib.json",
+            "project": "projects/ngx-documents-validators-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-documents-validators-lib/src/test.ts",
+            "tsConfig": "projects/ngx-documents-validators-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-documents-validators-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-documents-validators-lib/tsconfig.lib.json",
+              "projects/ngx-documents-validators-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-documents-validators"
 }
