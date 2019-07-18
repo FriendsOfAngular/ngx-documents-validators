@@ -1,7 +1,11 @@
 {
   "name": "ngx-documents-validators",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a Angular Library for validate documents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FriendsOfAngular/ngx-documents-validators"
+  },
   "keywords": [
     "Angular",
     "Library"
